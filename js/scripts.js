@@ -184,10 +184,11 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Hoang and Hang's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            // start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Feb 13, 2024 11:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
@@ -197,10 +198,10 @@ $(document).ready(function () {
             end: new Date('Nov 29, 2017 00:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'Army Hotel, 1a Nguyen Tri Phuong, Quan Thanh, Ba Dinh, Ha Noi',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "We can't wait to see you on our big day."
         }
     });
 
@@ -218,7 +219,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbyqz2-qIOGHlqzuVEYGE-XXQslIx2rCZB6VpprYl1BftaRs2g_AEQLVStVrPiDBfbrI/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -241,7 +242,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var location = {lat: 21.040376683486453, lng: 105.84238356326678};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
@@ -255,7 +256,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var la_fiesta = {lat: 21.040376683486453, lng: 105.84238356326678};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
