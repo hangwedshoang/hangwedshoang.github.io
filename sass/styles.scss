@@ -293,7 +293,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(138, 15, 15, .88);
+  background-color: rgba(138, 15, 15, .95);
   z-index: 999;
   width: 100%;
 }
@@ -318,7 +318,7 @@ header {
     display: inline-block;
   }
   .logo img {
-    height: 32px;
+    height: 40px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
