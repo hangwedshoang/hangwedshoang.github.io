@@ -268,7 +268,7 @@ Hero
     color: $txt-light;
   }
   h1 {
-    color: $txt-light;
+    // color: $txt-light;
     margin-bottom: 40px;
   }
   p.intro {
@@ -293,7 +293,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(127, 228, 240, .88);
+  background-color: rgba(138, 15, 15, .88);
   z-index: 999;
   width: 100%;
 }
