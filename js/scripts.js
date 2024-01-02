@@ -241,21 +241,21 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#message-alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
         $.post('https://script.google.com/macros/s/AKfycbx6fh4-SpjlqrPPaga9jF_deV9AlHvMoFOmkEI-8Q0oFmznNf3wUBZDwSS25oFpzQblkg/exec', data)
             .done(function (data) {
                 console.log(data);
                 if (data.result === "error") {
-                    $('#alert-wrapper').html(alert_markup('danger', data.message));
+                    $('#message-alert-wrapper').html(alert_markup('danger', data.message));
                 } else {
-                    $('#alert-wrapper').html('');
+                    $('#message-alert-wrapper').html('');
                     $('#message-modal').modal('show');
                 }
             })
             .fail(function (data) {
                 console.log(data);
-                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                $('#message-alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
             });
         
     });
