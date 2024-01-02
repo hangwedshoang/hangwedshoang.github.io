@@ -243,7 +243,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="header">Chuyện tình chúng tôi (Our love story)</h3>
+                <!-- <h3 class="header">Chuyện tình chúng tôi (Our love story)</h3> -->
             </div>
         </div>
         <div class="row">
@@ -487,6 +487,24 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+    <div id="message-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Cảm ơn lời nhắn của bạn!</h3>
+                        <h3>Thank you for your message!</h3>
+                        <!-- <p>Chúng tôi rất vui lòng được đón tiếp bạn trong ngày vui của chúng tôi.</p>
+                        <p>We are glad to see you join us on our big day.</p>
+                        <div id="add-to-cal"></div> -->
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -536,6 +554,41 @@
                     <button class="btn-fill rsvp-btn">
                         Yes,
                         that's me!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>Gửi lời nhắn tới Hoàng và Hằng! (Send a message to Hoang and Hang!)</h3>
+                <form id="message-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name" class=""
+                                                                 placeholder="Tên (Your name)"
+                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="text" name="message" class=""
+                                                                     placeholder="Lời nhắn (Your message)"
+                                                                    required >
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Gửi lời nhắn! (Send my message!)
                     </button>
                 </form>
             </div>
