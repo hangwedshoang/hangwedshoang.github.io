@@ -195,7 +195,7 @@ $(document).ready(function () {
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Feb 13, 2024 14:30'),
 
             // Event Address
             address: 'Army Hotel, 1a Nguyen Tri Phuong, Quan Thanh, Ba Dinh, Ha Noi',
